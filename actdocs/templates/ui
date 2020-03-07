@@ -7,9 +7,9 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <base href="[% make_uri('') %]" target="_top">
     <title>[% global.conference.name %]</title>
-    <meta name="description"      content="<t><de>Der Deutsche Perl-Workshop ist eine jährlich in Deutschland stattfindende Konferenz von und für Entwickler der Programmiersprache Perl.</de><en>The German Perl Workshop is a conference about the Perl Programming Language. It is organized by Perl developers.</en></t>">
-    <meta name="keywords"         content="Perl,Workshop,<t><de>Konferenz,Deutschland,Entwickler,Programmiersprache</de><en>Conference,Germany,Developer,Programming language</en></t>">
-    <meta name="application-name" content="ACT GPW2020">
+    <meta name="description"      content="<t><de>Der Deutsche Perl/Raku-Workshop ist eine jährlich in Deutschland stattfindende Konferenz von und für Entwickler der Programmiersprachen Perl und Raku.</de><en>The German Perl/Raku Workshop is a conference about the programming languages Perl and Raku. It is organized by Perl developers.</en></t>">
+    <meta name="keywords"         content="Perl,Workshop,Raku,<t><de>Konferenz,Deutschland,Entwickler,Programmiersprache</de><en>Conference,Germany,Developer,Programming language</en></t>">
+    <meta name="application-name" content="ACT GPW2021">
     <meta name="author"           content="Frankfurt Perlmongers">
     <meta name="generator"        content="act.yapc.eu">
     <link rel="alternate" type="application/atom+xml" title="[% global.conference.name %]"
@@ -83,6 +83,8 @@
             <fieldset class="form-group"><!--style="display: inline-block;float: right;"-->
               <label for="archiv"><t><de>Workshop</de><en>Conference</en></t>:</label>    
               <select class="selectpicker form-control" id="archiv"><!--style="display: inline-block;width: auto;"-->
+		        <option value="https://act.yapc.eu/gpw2021/">2021</option>
+		        <option value="https://act.yapc.eu/gpw2020/">2020</option>
 		        <option value="https://act.yapc.eu/gpw2019/">2019</option>
 		        <option value="https://act.yapc.eu/gpw2018/">2018</option>
 		        <option value="https://act.yapc.eu/gpw2017/">2017</option>

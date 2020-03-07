@@ -8,8 +8,8 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand hidden-xs hidden-sm hidden-md hidden-lg" href="index.html" title="<t><de>Startseite Deutscher Perl-Workshop</de><en>Home German Perl Workshop</en></t> 2020">
-            <span class="sitetitle"><t><de>Deutscher Perl-Workshop</de><en>German Perl Workshop</en></t></span><span class="year"> 2020</span>
+        <a class="navbar-brand hidden-xs hidden-sm hidden-md hidden-lg" href="index.html" title="<t><de>Startseite Deutscher Perl/Raku-Workshop</de><en>Home German Perl/Raku Workshop</en></t> 2021">
+            <span class="sitetitle"><t><de>Deutscher Perl/Raku-Workshop</de><en>German Perl/Raku Workshop</en></t></span><span class="year"> 2021</span>
         </a>
     </div>
 
@@ -27,7 +27,7 @@
                 <ul class="dropdown-menu">
                     <!--<li><a href="index.html"><t><de>Start</de><en>Home</en></t> [% global.conference.name %]</a></li>-->
                     
-                    <li><a href="venue.html"><t><de>Veranstaltungsort</de><en>Venue</en></t></a></li>
+<!--                    <li><a href="venue.html"><t><de>Veranstaltungsort</de><en>Venue</en></t></a></li> -->
 
                     <li>
                         <a href="[% make_uri('talks') %]"><t><de>Vorträge</de><en>Talks</en></t></a>
@@ -59,12 +59,12 @@
 [% END %]
 
                     
-                    <li><a href="[% make_uri('hotels.html') %]"><t><de>Hotels &amp; Anreise</de><en>Hotels &amp; Arrivals</en></t></a></li>
+<!--                    <li><a href="[% make_uri('hotels.html') %]"><t><de>Hotels &amp; Anreise</de><en>Hotels &amp; Arrivals</en></t></a></li> -->
                     <li>
                         <a href="[% make_uri('wiki') %]"><t><de>Wiki</de><en>Wiki</en></t></a>
                         <ul>
                             <li class="lv3">
-                                <a href="[% make_uri('wiki') %]"><t><de>Deutscher Perl-Workshop</de><en>German Perl Workshop</en></t></a>
+                                <a href="[% make_uri('wiki') %]"><t><de>Deutscher Perl/Raku-Workshop</de><en>German Perl/Raku Workshop</en></t></a>
                             </li>                    
                             <li class="lv3">
                                 <a href="[% make_uri('wiki?node=VorabendTreffen') %]"><t><de>Vorabend-Treffen</de><en>Pre-Conference Meeting</en></t></a>
@@ -73,7 +73,7 @@
                     </li>
 
                     <li><a href="status.html"><t><de>Status</de><en>Status</en></t></a></li>
-                    <li><a href="press.html"><t><de>Presse</de><en>Press</en></t></a></li>
+<!--                    <li><a href="press.html"><t><de>Presse</de><en>Press</en></t></a></li> -->
                 </ul>
             </li>
             <li class="dropdown schedule lv1">
@@ -83,7 +83,7 @@
                 <ul class="dropdown-menu">
 
                     <li>
-                        <a href="[% make_uri('schedule') %]"><t><de>Programm 2020</de><en>Schedule 2020</en></t></a>
+                        <a href="[% make_uri('schedule') %]"><t><de>Programm 2021</de><en>Schedule 2021</en></t></a>
                         <ul>
                             <li class="lv3">
                                 <a href="[% make_uri('timetable.ics') %]"><t><de>als iCal exportieren</de><en>iCal export</en></t></a>
