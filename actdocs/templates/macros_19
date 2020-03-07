@@ -1,0 +1,26 @@
+[%# Changelog
+
+    2018-11-21 haj
+
+      - Damit die Hotel-Einträge einigermaßen gleich aussehen, habe
+        ich ein paar Makros definiert.  Wenn sich das bewährt, kann
+        man das (ohne den Suffix _19) in ein allgemeines Template
+        verschieben.
+
+      - Die Makros sorgen für die Zweisprachigkeit und auch dafür,
+        dass die Icons mit Screen-Readern ordentlich wiedergegeben
+        werden können.
+%]
+
+[%- MACRO email_19(address) BLOCK -%]
+<a href="[% address %]" style="white-space: nowrap;"><span class="sr-only">eMail</span><span class="glyphicon glyphicon-envelope"></span>&nbsp;[% address %]</a>
+[%- END -%]
+[%- MACRO phone_19(number) BLOCK -%]
+<span class="glyphicon glyphicon-earphone"></span><span class="sr-only"><t><de>Telefon</de><en>Phone</en></t></span>&nbsp;[% number %]
+[%- END -%]
+[%- MACRO booking_19(url) BLOCK -%]
+<br /><a href="[% url %]"><t><de>Buchen</de><en>Booking</en></t> (Booking.com)</a>
+[%- END -%]
+
+
+[% CLEAR # Unterdrücken von Textoutput ("stray spaces" durch dieses Template -%]

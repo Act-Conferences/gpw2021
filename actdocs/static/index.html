@@ -1,0 +1,244 @@
+[% WRAPPER ui title = global.conference.name %]
+<!-- validate this with
+     https://search.google.com/structured-data/testing-tool?hl=de
+-->
+<script type='application/ld+json'>
+{
+  "@context": "http://www.schema.org",
+  "@type": "Event",
+  "name": "Deutscher Perl/Raku-Workshop, Erlangen 2020",
+  "url": "https://act.yapc.eu/gpw2020/",
+  "description": "Der Deutsche Perl/Raku-Workshop ist eine jährlich in Deutschland stattfindende Konferenz von und für Entwickler der Programmiersprache Perl und Raku.",
+  "startDate": "2020-03-04T09:00",
+  "endDate": "2020-03-06T19:00",
+  "location": {
+    "@type": "Place",
+    "name": "Erlangen",
+    "sameAs": "https://www.german-perl-workshop.de/",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Cauerstr. 7",
+      "addressLocality": "Erlangen",
+      "postalCode": "91058",
+      "addressCountry": "Deutschland"
+    }
+  },
+  "offers": {
+    "@type": "AggregateOffer",
+    "highPrice": 250,
+    "lowPrice": 50,
+    "offerCount": 3,
+    "offers": [{
+      "@type": "Offer",
+      "description": "Ticket",
+      "url": "https://act.yapc.eu/gpw2020/preise.html",
+      "price": "70",
+      "priceCurrency": "EUR"
+    },{
+      "@type": "Offer",
+      "description": "Firmenticket",
+      "url": "https://act.yapc.eu/gpw2020/preise.html",
+      "price": "250",
+      "priceCurrency": "EUR"
+    },{
+      "@type": "Offer",
+      "description": "Studententicket",
+      "url": "https://act.yapc.eu/gpw2020/preise.html",
+      "price": "50",
+      "priceCurrency": "EUR"
+    }]
+  }
+}
+</script>
+<h2>
+  <t>
+    <de>22. Deutscher Perl/Raku-Workshop 2020 Erlangen</de>
+    <en>22nd German Perl/Raku Workshop 2020 in Erlangen</en>
+  </t>
+  <small class="text-muted dateaddon">
+    <t>
+      <de> vom 04. bis 06. März 2020</de>
+      <en> from 4th to 6th March 2020</en>
+    </t>
+  </small>
+</h2>
+
+<h3>
+  <t>
+    <de>Über den Deutschen Perl/Raku-Workshop 2020</de>
+    <en>About the German Perl/Raku Workshop conference 2020</en>
+  </t>
+</h3>
+<p>
+  <t>
+    <de>
+      Der Deutsche Perl/Raku-Workshop ist eine jährlich in Deutschland
+      stattfindende <strong>Open-Source-Konferenz für jedermann</strong>.
+      Im Jahr 2020 wird er in starker Zusammenarbeit mit dem Rechenzentrum (RRZE)
+      der Friedrich-Alexander-Universität Erlangen-Nürnberg sowie von der Community der 
+      <a href="perl.html">Programmiersprache Perl</a>
+      und der
+      <a href="perl.html">Programmiersprache Raku</a> organisiert.
+         Der Workshop beginnt am <b>Mittwoch, den 4. März 2020 um 09:00 Uhr</b> und endet am <b>Freitag, den 6. März,
+         um etwa 16:00 Uhr</b>. Im Jahr 2020 nennen wir ihn "German Perl, Raku & Software Engineering Workshop - gpw2020"<br>
+         Wer schon am <b>Dienstag Abend</b> in Erlangen ist, kann sich mit den anderen Teilnehmern treffen im 
+         <a href="http://www.restaurant-boliwood.de/">Restaurant Boliwood</a> (<a href="https://www.openstreetmap.org/#map=19/49.59832/11.00026">OpenStreetMap</a>).
+         Die aktuellsten Informationen dazu gibt's im <a href="/gpw2020/wiki?node=VorabendTreffen">Wiki</a>.
+    </de>
+    <en>
+      The German Perl/Raku Workshop is an <strong>Open Source conference for everyone</strong>,
+      organized together with the datacenter of the Friedrich-Alexander University (RRZE) by community of the
+      <a href="perl.html">Perl Programming Language</a>
+      and
+      <a href="perl.html">Raku Programming Language</a>
+      yearly in Germany.
+         The 2020 edition will be from <b>Wednesday, March 4th, 09:00</b> to <b>Friday, March 6th, 16:00</b>
+      in Erlangen.
+      In 2020 we call it "German Perl, Raku & Software Engineering Workshop - gpw2020".
+         For those who are in Erlangen Tuesday evening, there will be a meetup at
+         <a href="http://www.restaurant-boliwood.de/">Restaurant Boliwood</a> (<a href="https://www.openstreetmap.org/#map=19/49.59832/11.00026">OpenStreetMap</a>). See the <a href="/gpw2020/wiki?node=VorabendTreffen">wiki</a> for last minute information.
+    </en>
+  </t>
+</p>
+<p>
+  <t>
+    <de>
+      Bitte beachte den <a href="code_of_conduct.html">Verhaltenskodex</a>.
+    </de>
+    <en>
+      Please observe the <a href="code_of_conduct.html">Code of Conduct</a>.
+    </en>
+  </t>
+</p>
+<p>
+  <t>
+    <de>Die Vorträge werden  überwiegend in Deutsch gehalten (mit Folien auf Englisch). Vorträge auf Englisch sind ebenfalls sehr willkommen.<br>
+    </de>
+    <en>
+      Most of the talks will be held in German, German talks will have English slides at least. English talks are welcome as well.</p>
+    </en>
+  </t>
+</p>
+
+[% IF global.config.registration_open AND NOT global.request.user.has_registered %]
+<p>
+  <a href="[% make_uri('register') %]" class="btn btn-primary btn-block" role="button"[%# active btn-gpw aria-pressed="true" %]>
+    <t>
+      <de>Jetzt für den Workshop anmelden</de>
+      <en>Signup for attendance now</en>
+    </t>
+  </a>
+</p>
+[% END %]
+[% IF global.config.talks_submissions_open %]
+<h3>
+  <t>
+    <de>Wir suchen Dich als Vortragenden!</de>
+    <en>We want you as a speaker!</en>
+  </t>
+</h3>
+<p>
+  <a href="[% make_uri('newtalk') %]" class="btn btn-primary btn-block" role="button">
+    <t>
+      <de>Vortrag einreichen</de>
+      <en>Submit a talk</en>
+    </t>
+  </a>
+</p>
+[% END %]
+<!--
+<p>
+  <a href="[% make_uri('wanted.html') %]" class="btn btn-primary btn-block" role="button"[%# active btn-gpw aria-pressed="true" %]>
+    <t>
+      <de>Vorschläge für Vorträge</de>
+      <en>Talk suggestions</en>
+    </t>
+  </a>
+</p>
+-->
+<h3>
+  <t>
+    <de>Wichtige Informationen</de>
+    <en>Important information</en>
+  </t>
+</h3>
+<ul>
+<!--
+  <li>
+    <t>
+      <de>Details zum</de>
+      <en>About the</en>
+    </t>
+    <a href="venue.html">
+      <t>
+        <de>Veranstaltungsort</de>
+        <en>venue</en>
+      </t>
+    </a>
+  </li>
+-->
+  <li>
+    <a href="preise.html"><t><de>Preisübersicht</de><en>Pricing</en></t></a>
+  </li>
+<!--
+  <li>
+    <t>
+      <de>
+        Auch dieses Jahr
+        <a href="social_event.html">laden wir die Teilnehmer zu einem gemeinsamen Abendessen ein</a>.
+      </de>
+      <en>
+        Following our tradition, <a href="social_event.html">we invite all attendees to a diner.</a>
+      </en>
+    </t>
+  </li>
+  <li>Extras:
+    <a href="wiki?node=VorabendTreffen">
+      <t>
+        <de>Vorabend-Treffen</de>
+        <en>Pre-conference meeting</en>
+      </t>
+    </a>
+  </li>
+-->
+</ul>
+<p>
+  <t>
+    <de>E-Mail-Kontakt</de>
+    <en>E-mail contact</en>
+  </t>: <a href="mailto:orga2020@german-perl-workshop.de" class="email icon-envelope">mailto:orga2020@german-perl-workshop.de</a>
+</p>
+
+
+[%
+    news = global.news(3);
+    IF news.size > 2;
+        more = news.pop;
+    END;
+%]
+[% IF news.size %]
+<h3>
+  <t><de>Aktuellste Neuigkeiten</de><en>Latest news</en></t>
+  <a href="atom/[% global.request.language %].xml"><img src="images/feed-icon-14x14.png" alt="Atom feed"></a>
+</h3>
+<div class="newsblock clearfixafter">
+[% FOREACH item = news %]
+  <article class="news-entry col-xs-12">
+    <header class="news-header">
+      <h4>
+        <span class="news-date">[% date_format(item.datetime, 'date_short') %]</span>
+        <span class="news-title">[% item.title %]</span>
+      </h4>
+    </header>
+    <section class="news-text">
+      [% item.content %]
+    </section>
+  </article>
+  [% END %]
+[% END %]
+[% IF more %]
+  <p class="pull-right"><a href="news" class="news-link"><t><de>Alle Neuigkeiten</de><en>All news</en></t></a></p>
+</div>
+[% END %]
+
+[% END %]

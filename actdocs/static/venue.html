@@ -1,0 +1,37 @@
+[% WRAPPER ui title = global.conference.name %]
+    <h2><t><de>Veranstaltungsort</de><en>Venue</en></t></h2>
+    <style type="text/css">#basicMap { /*width: 600px;*/ height: 500px; margin: 0;width: 100%; margin-bottom: 30px !important; }</style>
+    <script src="http://www.openlayers.org/api/OpenLayers.js"></script>
+    <p>
+      <t>
+        <de>
+          Der Deutsche Perl/Raku-Workshop 2020 findet in Cauerstraße 7, 91058
+          Erlangen statt.
+          Es macht Sinn, Hotels in der Innenstadt oder in Bahnhofsnähe zu
+          suchen, weil das der zentrale Punkt für die öffentlichen
+          Verkehrsmittel ist.
+        </de>
+        <en>
+          The German Perl/Raku Workshop 2020 will take place in Cauerstraße 7,
+          91058 Erlangen.
+          It makes sense to look for hotels in the city centre or near the
+          railway station. This is the central point for public transportation.
+        </en>
+      </t>
+    </p>
+    <div id="basicMap"></div>
+    <script type="text/javascript">
+      function init() {
+        map = new OpenLayers.Map("basicMap");
+        var mapnik = new OpenLayers.Layer.OSM();
+        map.addLayer(mapnik);
+        var lonLat = new OpenLayers.LonLat(11.0289165, 49.5726059)
+            .transform(
+                new OpenLayers.Projection("EPSG:4326"),
+                map.getProjectionObject()
+        );
+        map.setCenter(lonLat, 16); // Zoom level
+      }
+      init();
+    </script>
+[% END %]
