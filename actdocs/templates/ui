@@ -40,7 +40,6 @@
     <header id="header" class="block rowx">
       <div class="headerContent col-xs-12 no-float">
         <a class="homelink clearfixafter" href="index.html" title="[% global.conference.name %]">
-          <div id="logo-venue" class="col-xs-2"></div>
           <div id="logo" class="col-xs-3"></div>
           <h1 id="site_name" class="col-xs-7">[% global.conference.name %]</h1>
         </a>
