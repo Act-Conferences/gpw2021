@@ -35,7 +35,7 @@ body.fixed-header #header .headerContent {
   background-color: #333366;
 }
 #header.fixed,
-body.fixed-header #header { 
+body.fixed-header #header {
     position: fixed;
     left: 0;
     right: 0;
@@ -46,21 +46,23 @@ body.fixed-header #header {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.35);
 
     margin: 0 auto;
-    max-width: 940px;  
+    max-width: 940px;
 }
 .h1, .h2, .h3, h1, h2, h3 { /*bootstrap überschreiben*/
     margin-top: 50px;
     margin-bottom: 20px;
 }
+
 #logo {
   float: left;
-  background: transparent url(../images/karawane_camelia.png) left top no-repeat;
+  background: transparent url("../pkl-header-weiß.svg") left top no-repeat;
   background-size: contain;
-  max-width: 165px;
-  min-height: 42px; 
-  max-height: 72px; 
+  min-width: 180px;
+  min-height: 42px;
+  max-height: 72px;
   margin-top: 0;
 }
+/*
 #logo-venue {
   float: left;
   background: transparent url(../images/FAU_rgb.jpg) left top no-repeat;
@@ -70,25 +72,19 @@ body.fixed-header #header {
   max-height: 72px;
   margin-top: 0;
 }
+* */
 
 @media(min-width:768px){
   #logo {
     min-height: 58px;
+    min-width: 270px; /* SVG */
     margin-top:5px;
   }
-  #logo-venue {
-    min-height: 58px;
-    margin-top:5px;
-  }
-
 }
 @media(min-width:992px){
   #logo {
     min-height: 72px;
-    margin-top:5px;
-  }
-  #logo-venue {
-    min-height: 72px;
+    min-width: 270px; /* SVG */
     margin-top:5px;
   }
 }
@@ -99,7 +95,7 @@ body.fixed-header #header {
   line-height: 1em;
   text-align: right;
   padding-right: 0;
-  float: right;  
+  float: right;
 }
 @media (min-width: 768px) {
   #header h1 {
@@ -120,7 +116,7 @@ body.fixed-header #header {
 }
 #menustorage .navbar-brand {
   float: left;
-  display: inline-block;  
+  display: inline-block;
 }
 @media(max-width:767px){
   #menustorage .navbar-header span {
@@ -248,7 +244,7 @@ textarea[name="content"] {
   float:none;
 }
 /*damit content und sidebar ausgeglichen sind*/
-section#document h2:first-child, 
+section#document h2:first-child,
 section#document h3:first-child,
 section#document h4:first-child {
     margin-top: 0;
@@ -285,7 +281,7 @@ section#document h4:first-child {
 #document .icon-envelope:before,
 #footer .icon-envelope:before {
   margin-right:0.25em;
-} 
+}
 /*i:after{ content: '\2022';}*/
 #document .videoblock .embed-responsive.withmargin {
   margin-bottom:20px;
@@ -310,7 +306,7 @@ section#document h4:first-child {
   content: "\f1c8";/*fa-file-video-o*/
 
   width: 1em;
-  margin-left: -1.25em;  
+  margin-left: -1.25em;
   margin-right: 0;
 }
 #document .conferencedata {
@@ -333,7 +329,7 @@ aside#sidebar a {
     margin-bottom: 0.25em;
 }
 /*for floating elements*/
-section#document, 
+section#document,
 aside#sidebar {
     margin-bottom: 50px;
 }
@@ -344,7 +340,7 @@ footer#footer {
 /*hier überschreiben damit orig script austauschbar bleibt*/
 .social_share_privacy {
   margin-top: 50px;
-  margin-bottom: 30px; 
+  margin-bottom: 30px;
   text-align: center;
 }
 .social_share_privacy .social_share_privacy_area {
@@ -361,25 +357,25 @@ footer#footer {
 .social_share_privacy .social_share_privacy_area li.facebook,
 .social_share_privacy .social_share_privacy_area li.twitter,
 .social_share_privacy .social_share_privacy_area li.gplus,
-.social_share_privacy .social_share_privacy_area li.settings_info { 
+.social_share_privacy .social_share_privacy_area li.settings_info {
 }
 .social_share_privacy .social_share_privacy_area li.help_info {
   width: 33% !important;/*width: auto;*/
   padding-right: 15px !important;
 }
-  .social_share_privacy .social_share_privacy_area li.help_info.display .info, 
+  .social_share_privacy .social_share_privacy_area li.help_info.display .info,
   .social_share_privacy .social_share_privacy_area li .help_info.icon.display .info {
       z-index:1100;
   }
 .social_share_privacy .social_share_privacy_area li.facebook {
-  width: 132px !important;  
+  width: 132px !important;
 }
 .social_share_privacy .social_share_privacy_area li.twitter {
-  width: 104px !important;  
+  width: 104px !important;
 }
 .social_share_privacy .social_share_privacy_area li.gplus {
   width: 68px !important;
-  padding-right: 0 !important; 
+  padding-right: 0 !important;
 }
 .social_share_privacy .social_share_privacy_area li.settings_info {
   padding-right: 0 !important;
@@ -411,12 +407,12 @@ form.separated {
 }
 @media (min-width: 768px) and (max-width: 991px) {
   aside#sidebar {
-    font-size: 0.8em;  
-  }  
+    font-size: 0.8em;
+  }
 }
 @media (min-width: 992px) {
   aside#sidebar {
-    font-size: 0.9em;  
+    font-size: 0.9em;
   }
 }
 /*
@@ -439,8 +435,8 @@ menu - sm-devices 2 lines;
 @media (min-width: 1200px) {}
 
 @media(max-width: @screen-xs-max){}
-@media(min-width: @screen-sm-min){}  
-@media(min-width: @screen-md-min){}  
+@media(min-width: @screen-sm-min){}
+@media(min-width: @screen-md-min){}
 @media(min-width: @screen-lg-min){}
 
 /* menu - sm-devices 2 lines;*/
@@ -448,19 +444,19 @@ menu - sm-devices 2 lines;
   #menustorage nav.navbar .navbar-header,
   #menustorage nav.navbar #gpwNavbar {
     display: block;
-    float: none; 
-  } 
-} 
+    float: none;
+  }
+}
 /*alternative zu hidden-sm - einblenden im background*/
 @media (min-width: 768px) and (max-width: 991px) {
     .register .glyphicon,
     .login .glyphicon {
-        position: absolute; 
+        position: absolute;
         top: 10px;
         left: 2px;
         color: transparent;/*fallback*/
         color: rgba(255,255,255,0.2);
-        font-size: 30px;   
+        font-size: 30px;
     }
 }
 @media (min-width: 768px) {
@@ -487,21 +483,21 @@ menu - sm-devices 2 lines;
 }
 /*lv2 und lv3 links auf selbe höhe bringen*/
 #menustorage .navbar-nav .open .dropdown-menu .dropdown-header,
-#menustorage .navbar-nav .open .dropdown-menu>li>a, 
+#menustorage .navbar-nav .open .dropdown-menu>li>a,
 #menustorage .navbar-nav .open .dropdown-menu li a {
     padding: 5px 15px 5px 25px;
     display: block;
 }
-/*einrückung lv3*/ 
+/*einrückung lv3*/
 #menustorage .navbar-nav .dropdown-menu li ul li.lv3 a {
     padding-left: 45px;
 }
 /*bootstrap überschreiben*/
 #menustorage .navbar-nav ul li a:active,
 #menustorage .navbar-nav ul li a:focus,
-#menustorage .navbar-nav .dropdown-menu>li>a:focus, 
+#menustorage .navbar-nav .dropdown-menu>li>a:focus,
 #menustorage .navbar-nav .dropdown-menu>li>a:hover,
-#menustorage .navbar-nav .dropdown-menu li a:focus, 
+#menustorage .navbar-nav .dropdown-menu li a:focus,
 #menustorage .navbar-nav .dropdown-menu li a:hover {
   text-decoration:underline;
 }
@@ -528,12 +524,12 @@ fast-weiss #ddd
 */
 /*gradient löschen*/
 #menustorage .navbar-inverse.gpw,
-#menustorage .navbar-inverse.gpw .navbar-nav>.active>a, 
+#menustorage .navbar-inverse.gpw .navbar-nav>.active>a,
 #menustorage .navbar-inverse.gpw .navbar-nav>.open>a,
-#menustorage .dropdown-menu>li>a:focus, 
+#menustorage .dropdown-menu>li>a:focus,
 #menustorage .dropdown-menu>li>a:hover {
     background-image:none;
-    background:none;  
+    background:none;
     filter: ;/*reset*/
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(enabled=false)" !important;
     background-repeat:no-repeat;
@@ -566,22 +562,22 @@ fast-weiss #ddd
   #menustorage .navbar-inverse.gpw .navbar-nav>li:focus {
     background-color: #232343;/*gpwbluemediumdark*/
   }
-} 
-#menustorage .navbar-inverse.gpw .navbar-nav > .active > a, 
-#menustorage .navbar-inverse.gpw .navbar-nav > .active > a:hover, 
+}
+#menustorage .navbar-inverse.gpw .navbar-nav > .active > a,
+#menustorage .navbar-inverse.gpw .navbar-nav > .active > a:hover,
 #menustorage .navbar-inverse.gpw .navbar-nav > .active > a:focus {
     color: #fff;/*weiss #555;*/
-    background-color: #121221;/*gpwbluedark*/ 
+    background-color: #121221;/*gpwbluedark*/
 }
-#menustorage .navbar-inverse.gpw .navbar-nav > .open > a, 
-#menustorage .navbar-inverse.gpw .navbar-nav > .open > a:hover, 
+#menustorage .navbar-inverse.gpw .navbar-nav > .open > a,
+#menustorage .navbar-inverse.gpw .navbar-nav > .open > a:hover,
 #menustorage .navbar-inverse.gpw .navbar-nav > .open > a:focus {
     color: #232343;/*gpwbluemediumdark*/
     background-color: #ddd;/*fast-weiss*/
 }
 #menustorage .navbar-inverse.gpw .navbar-nav .open .dropdown-menu {
   background-color: #333366;/*gpwblue*//*fallback*/
-  background: rgba(51, 51, 102, 0.98);/*gpwblue - transparent*/  
+  background: rgba(51, 51, 102, 0.98);/*gpwblue - transparent*/
 }
 /* caret */
 #menustorage .navbar-inverse.gpw .navbar-nav > .dropdown > a .caret {
@@ -596,11 +592,11 @@ fast-weiss #ddd
     border-top-color: #ddd;/*fast-weiss*/
     border-bottom-color: #ddd;/*fast-weiss*/
 }
-#menustorage .navbar-inverse.gpw .navbar-nav > .open > a .caret, 
-#menustorage .navbar-inverse.gpw .navbar-nav > .open > a:hover .caret, 
+#menustorage .navbar-inverse.gpw .navbar-nav > .open > a .caret,
+#menustorage .navbar-inverse.gpw .navbar-nav > .open > a:hover .caret,
 #menustorage .navbar-inverse.gpw .navbar-nav > .open > a:focus .caret {
-    border-top-color: #121221;/*gpwbluedark*/ 
-    border-bottom-color: #121221;/*gpwbluedark*/ 
+    border-top-color: #121221;/*gpwbluedark*/
+    border-bottom-color: #121221;/*gpwbluedark*/
 }
 /* mobile version */
 #menustorage .navbar-inverse.gpw .navbar-toggle {
@@ -626,7 +622,7 @@ fast-weiss #ddd
     #menustorage .navbar-inverse.gpw .navbar-nav > li > a:hover,
     #menustorage .navbar-inverse.gpw .navbar-nav > li > a:focus {
         color: #ddd;/*fast-weiss*/
-    }  
+    }
     #menustorage .navbar-inverse.gpw .navbar-nav .open .dropdown-menu > li > a {
         color: #ddd;/*fast-weiss*//*green;*/
     }
@@ -638,13 +634,13 @@ fast-weiss #ddd
 }
 
 /*fixierte navigation- ebenso body.fixed-header und somit #header .headerContent : display:none; transition; */
-#header { 
+#header {
 }
 body.fixed-header #header {
-    margin-top: 52px; 
+    margin-top: 52px;
 }
 body.fixed-header #header .headerContent {
-    display:none; 
+    display:none;
 }
 
 #header.fixed #menustorage .navbar-default.navbar-fixed-top {
@@ -666,7 +662,7 @@ body.fixed-header #header .headerContent {
       left: -3000px;
   }
   #header.fixed #menustorage .navbar-default.navbar-fixed-top:after {
-      right: -3000px; 
+      right: -3000px;
   }
 }
 
