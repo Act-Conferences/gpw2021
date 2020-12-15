@@ -55,7 +55,7 @@ body.fixed-header #header {
 
 #logo {
   float: left;
-  background: transparent url("../pkl-header-weiss.svg") left top no-repeat;
+  background: transparent url("../images/pkl-header-weiss.svg") left top no-repeat;
   background-size: contain;
   min-width: 180px;
   min-height: 42px;
