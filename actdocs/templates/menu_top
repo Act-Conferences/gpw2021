@@ -106,7 +106,8 @@
                 <ul class="dropdown-menu">
                     <li><a href="sponsoring.html"><t><de>Sponsor werden</de><en>Becoming a sponsor</en></t></a></li><!--Unterstützen/Sponsoring-->
                     <li><a href="sponsors.html"><t><de>Workshop Sponsoren</de><en>Conference sponsors</en></t></a></li>
-                </ul>
+                    <li><a href="jobs.html"><t><de>Jobangebote unserer Sponsoren</de><en>Job offers from the sponsors</en></t></a></li> </ul>
+
             </li>                    
         </ul>
         <ul class="nav navbar-nav navbar-right">
